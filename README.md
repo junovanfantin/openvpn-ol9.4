@@ -83,20 +83,3 @@ Licença
 
 Este projeto está licenciado sob a Licença MIT.
 
-
-### Explicações:
-
-1. **Estrutura e Títulos**:
-   - O arquivo está estruturado com seções claras: **Introdução**, **Uso dos Scripts**, **Pré-requisitos**, **Observações**, **Contribuindo** e **Licença**.
-   
-2. **Instruções de uso**:
-   - Cada script tem uma descrição clara de sua função e como usá-lo.
-   - As instruções são diretas e com os passos que o usuário precisa seguir para utilizar os scripts.
-
-3. **Pré-requisitos**:
-   - Destaca a necessidade de ferramentas de desenvolvimento como **gcc**, **make**, etc.
-
-4. **Observações**:
-   - A seção de **Observações** explica a lógica por trás da execução dos scripts em sistemas online e offline.
-
-Esse **README.md** deve ser claro e fácil de seguir para qualquer pessoa que precise usar os scripts n
