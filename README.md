@@ -23,3 +23,80 @@ Este script é usado **inicialmente** para baixar todos os pacotes necessários 
    ```bash
    chmod +x prepare_openvpn_offline.sh
    ./prepare_openvpn_offline.sh
+
+Este script irá:
+
+    Baixar o código-fonte do OpenVPN 2.6.14 e suas dependências.
+
+    Gerar arquivos RPM no diretório especificado, que serão utilizados para a instalação offline.
+
+    Após a execução, os arquivos RPM necessários para a instalação offline estarão prontos no diretório especificado. Esses pacotes podem ser transferidos para o servidor ou sistema onde a instalação offline será realizada.
+
+2. recompile_openvpn_offline.sh
+
+Este script é usado para compilar todas as dependências e o OpenVPN 2.6 a partir dos pacotes RPM gerados previamente. Ele configura, compila e instala o OpenVPN e suas dependências, sem necessidade de conexão com a internet.
+Funcionalidades:
+
+    Instala as dependências a partir dos pacotes RPM locais.
+
+    Compila e instala libpkcs11-helper e outras bibliotecas necessárias.
+
+    Compila e instala o OpenVPN 2.6.14 a partir do código-fonte, utilizando as dependências locais.
+
+    Verifica se a instalação foi bem-sucedida.
+
+Como Usar:
+
+    Certifique-se de que os pacotes RPM gerados com o script prepare_openvpn_offline.sh estejam disponíveis.
+
+    Faça o download do script para o seu sistema.
+
+    Execute o script para compilar e instalar o OpenVPN:
+
+    chmod +x recompile_openvpn_offline.sh
+    ./recompile_openvpn_offline.sh
+
+    Este script irá:
+
+        Instalar as dependências a partir dos pacotes RPM.
+
+        Compilar e instalar libpkcs11-helper e o OpenVPN 2.6.14.
+
+    Após a execução bem-sucedida do script, o OpenVPN 2.6.14 estará instalado e pronto para uso.
+
+Pré-requisitos
+
+    Sistema Linux com Oracle Linux 9.4 ou similar.
+
+    Dependências mínimas como gcc, make, pkg-config e outras ferramentas de desenvolvimento (instaladas por meio de pacotes RPM).
+
+Observações
+
+    O script prepare_openvpn_offline.sh deve ser executado em um sistema com acesso à internet, onde ele irá baixar todos os pacotes e gerar os arquivos RPM necessários.
+
+    O script recompile_openvpn_offline.sh é utilizado para instalar o OpenVPN em sistemas offline, onde você já tem os arquivos RPM baixados.
+
+Contribuindo
+
+Sinta-se à vontade para fazer contribuições. Se você encontrar problemas ou quiser sugerir melhorias, abra uma issue ou um pull request.
+Licença
+
+Este projeto está licenciado sob a Licença MIT.
+
+
+### Explicações:
+
+1. **Estrutura e Títulos**:
+   - O arquivo está estruturado com seções claras: **Introdução**, **Uso dos Scripts**, **Pré-requisitos**, **Observações**, **Contribuindo** e **Licença**.
+   
+2. **Instruções de uso**:
+   - Cada script tem uma descrição clara de sua função e como usá-lo.
+   - As instruções são diretas e com os passos que o usuário precisa seguir para utilizar os scripts.
+
+3. **Pré-requisitos**:
+   - Destaca a necessidade de ferramentas de desenvolvimento como **gcc**, **make**, etc.
+
+4. **Observações**:
+   - A seção de **Observações** explica a lógica por trás da execução dos scripts em sistemas online e offline.
+
+Esse **README.md** deve ser claro e fácil de seguir para qualquer pessoa que precise usar os scripts n
