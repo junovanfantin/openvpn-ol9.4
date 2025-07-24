@@ -76,3 +76,4 @@ mv $OFFLINE_DIR/src/openvpn-${OPENVPN_VERSION}/ /opt/openvpn/
 # --------------------------
 echo "✅ OpenVPN e libpkcs11-helper instalados com sucesso!"
 /usr/local/sbin/openvpn --version
+
