@@ -66,6 +66,7 @@ DEPS=(
   pam-devel
   systemd-devel
   epel-release
+  easy-rsa
 )
 
 for pkg in "${DEPS[@]}"; do
