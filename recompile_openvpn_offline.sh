@@ -68,6 +68,9 @@ echo "Compilando e instalando OpenVPN..."
 make -j"$(nproc)"
 sudo make install
 
+# Mover binarios para /opt/openvpn
+mv $OFFLINE_DIR/src/openvpn-${OPENVPN_VERSION}/ /opt/openvpn/
+
 # --------------------------
 # Etapa 5: Verificação
 # --------------------------
